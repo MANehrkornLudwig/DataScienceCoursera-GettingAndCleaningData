@@ -11,7 +11,7 @@ run_analysis.R performs the following tasks in order to create a tidy data set b
 In addition to that, it creates a second tidy data set with the average of each variable for each activity and each subject. This data set is returned by "run_analysis".
 
 The script provides a function to download the data if necessary ("obtain_data"). 
-Training and test datasets are individually prepared by the "prepare_data" function. This includes (1) loading the data sets, (2) labelling the variables, (3) selecting data on means and standard deviations, (4) combining data sets and (5) and labelling variables if necessary.
+Training and test datasets are individually prepared by the "prepare_data" function. This includes (1) loading the data sets, (2) labelling the variables, (3) selecting data on means and standard deviations, (4) combining data sets (data set identifying the subject, feature data, activities) and (5) and labelling variables if necessary.
 
 Both function are called by the "run_analysis" function. In addition to that, the function prepares variable (features) as well as value (activities) labels, merges processed training and test data, calculates the average of each variable for each activity and each subject, and exports the resulting tidy datasets.
 

@@ -128,7 +128,7 @@ run_analysis <- function(download=TRUE){
     
 #   export data
     write.table(aggregate.data, "./TidyData.txt", row.names = FALSE, quote = FALSE)
-    write.table(tidy.data, "./TidyData.csv", quote = FALSE)
+    write.table(tidy.data, "./TidyData.csv", row.names = FALSE, quote = FALSE)
 
 #   return aggregate data
     aggregate.data
